@@ -24,6 +24,6 @@ The `.gitignore` file is used to specify intentionally untracked files to ignore
 |/lib/**/name	|All name folders, and files and folders in any name folder within the lib folder.	|/lib/name/log.file /lib/test/name/log.file /lib/test/ver1/name/log.file|
 |*.file	|All files withe .file extention|	/name.file  /lib/name.file|
 |name/  !name/secret.log	|! specifies a negation or exception. Matches all files and folders in any name folder, except name/secret.log|	/name/file.txt /name/log/name.log |
-|*.file !name.file	|! specifies a negation or exception. All files withe .file extention, except name.file	|/log.file  /lastname.file |
+|*.file !name.file|! specifies a negation or exception. All files withe .file extention, except name.file	|/log.file  /lastname.file |
 |*.file !name /*.file junk.*	|Adding new patterns after a negation will re-ignore a previous negated file. All files withe .file extention, except the ones in name folder. Unless the file name is junk	|/log.file name/log.file |
-   
+| *.tmp  |  #Ignore all .tmp files # But do not ignore .tmp files in the 'cache' directory| !/cache/*.tmp | 

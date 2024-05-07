@@ -1,3 +1,9 @@
+# Gitignore Cheatsheet
+
+The `.gitignore` file is used to specify intentionally untracked files to ignore. It uses glob patterns to match files and directories.
+
+### Rules for Matching Patterns in .gitignore Files
+
 | Pattern            |                                             Explanations/Matches                                             |                                                                Examples |
 | ------------------ | :----------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------: |
 | \*\*/lib/name.file |    Starting with \*\* before / specifies that it matches any folder in the repository. Not just on root.     |                                      /lib/name.file /test/lib/name.file |
